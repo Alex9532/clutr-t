@@ -51,7 +51,7 @@ function UnityProgress (dom) {
       this.progress = progress;
     }
     if (progress == 1) {
-      this.SetMessage('BRO DO NOT TOUCH ANYTHING Preparing...');
+      this.SetMessage('Fix by Slope and Stuff');
     }
     this.progressFrame.style.visibility = "visible";
     this.progressBar.style.display = "inline";			
