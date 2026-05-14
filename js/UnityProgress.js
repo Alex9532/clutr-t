@@ -1,7 +1,7 @@
 function UnityProgress (dom) {
   var root_path = './TemplateData';
   this.progress = 0.0;
-  this.message = "";
+  this.message = "FIX BY ALEX B";
   this.dom = dom;
 
   var parent = dom.parentNode;
@@ -51,7 +51,7 @@ function UnityProgress (dom) {
       this.progress = progress;
     }
     if (progress == 1) {
-      this.SetMessage('Preparing...');
+      this.SetMessage('BRO DO NOT TOUCH ANYTHING Preparing...');
     }
     this.progressFrame.style.visibility = "visible";
     this.progressBar.style.display = "inline";			
@@ -59,16 +59,17 @@ function UnityProgress (dom) {
   }
 
   this.SetMessage = function (message) {
-    if (message == "Loading WebGL Player, Please wait...") {
+    if (message == "BRO DO NOT TOUCH ANYTHING Loading WebGL Player, Please wait...") {
       message += '<img src="' + root_path + '/gears.gif" />'
-    } else if ((m = message.match(/^Downloading data... \(([0-9]+)\/([0-9]+)\)/)) !== null) {
+    } else if ((m = message.match(/^BRO DO NOT TOUCH ANYTHING Downloading data... \(([0-9]+)\/([0-9]+)\)/)) !== null) {
       message = this.RewriteMessage(m);
     }
 
     this.message = message; 
     this.background.style.display = "inline";
     this.progressFrame.style.visibility = "hidden";
-    this.progressBar.style.display = "none";			
+    this.progressBar.style.display = "none";
+    this.message = "FIX BY ALEX B";
     this.Update();
   }
 
