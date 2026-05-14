@@ -34,9 +34,9 @@ function UnityProgress (dom) {
   progressBarLoader.setAttribute('id', 'progress-bar-loader');
   screen.appendChild(progressBarLoader);
 
-  var progressBar = document.createElement("img");
+  var progressBar = document.createElement("h1");
   progressBar.setAttribute('id', 'progress-bar');
-  progressBar.src = root_path + "/fullbar.png"; 
+  progressBar.src = ""; 
   progressBarLoader.appendChild(progressBar);
   this.progressBar = progressBar;
 
@@ -65,7 +65,6 @@ function UnityProgress (dom) {
       message = this.RewriteMessage(m);
     }
 
-    this.message = "FIX BY ALEX B";
     this.message = message; 
     this.background.style.display = "inline";
     this.progressFrame.style.visibility = "hidden";
